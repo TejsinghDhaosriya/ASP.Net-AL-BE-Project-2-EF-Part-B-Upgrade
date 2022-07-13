@@ -43,6 +43,7 @@ namespace Student_API.Migrations
 
                     b.Property<string>("section")
                         .IsRequired()
+                        .HasDefaultValue("NA")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
